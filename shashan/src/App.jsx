@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import Events from "./Components/Events/Events";
 import About from "./Components/About/About";
+import Services from "./Components/Services/Services";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/events" element={<Events/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/services" element={<Services/>}/>
         <Route path="*" element={<h1>404 Not Found</h1>}/>
       </Routes>
       <Footer/>

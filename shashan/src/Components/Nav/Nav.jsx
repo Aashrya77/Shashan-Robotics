@@ -10,7 +10,7 @@ const Navbar = () => {
         <li><a href="/">Home</a></li>
         <li><a href="/events">Events</a></li>
         <li><a href="/about">About Us</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="/services">Services</a></li>
         <li><a href="#">Achievements</a></li>
         <li className="dropdown">
           <a href="#">Membership ▾</a>
