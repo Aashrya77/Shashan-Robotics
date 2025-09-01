@@ -151,7 +151,7 @@ const Home = () => {
         <div className="cards-container">
           
           {/* First Card */}
-          <div className="card">
+          <div className="comm-card">
             <div className="card-image">
               [Team Meeting Image]
             </div>
@@ -166,7 +166,7 @@ const Home = () => {
           </div>
 
           {/* Second Card */}
-          <div className="card">
+          <div className="comm-card">
             <div className="card-image">
               [Mentorship Image]
             </div>
@@ -181,7 +181,7 @@ const Home = () => {
           </div>
 
           {/* Third Card */}
-          <div className="card">
+          <div className="comm-card">
             <div className="card-image">
               [Robot Projects Image]
             </div>
@@ -197,7 +197,7 @@ const Home = () => {
 
         </div>
 
-        <button className="join-button">
+        <button className="join-button btn explore">
           Join our Robotics Community
         </button>
       </div>

@@ -46,7 +46,7 @@ const Footer = () => {
                 technology.
               </p>
               <div className="footer-buttons">
-                <button className="footer-button ">
+                <button className="btn join footer-button ">
                   Join Our Community
                 </button>
                 <button className="footer-button events-button">
