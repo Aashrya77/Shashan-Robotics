@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
+        <Link to="/"><img src="/Shashan_Logo.png" alt="logo" /></Link>
         
-        <img src="/Shashan_Logo.png" alt="logo" />
         <ul className="navbar-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/events">Events</Link></li>
