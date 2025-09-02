@@ -11,9 +11,9 @@ const Navbar = () => {
         <li><a href="/events">Events</a></li>
         <li><a href="/about">About Us</a></li>
         <li><a href="/services">Services</a></li>
-        <li><a href="#">Achievements</a></li>
+        <li><a href="/achievements">Achievements</a></li>
         <li className="dropdown">
-          <a href="#">Membership ▾</a>
+          <a href="/membership">Membership ▾</a>
           <ul className="dropdown-menu">
             <li><a href="#">Option 1</a></li>
             <li><a href="#">Option 2</a></li>
