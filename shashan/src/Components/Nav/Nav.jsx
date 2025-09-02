@@ -1,22 +1,23 @@
 import React from "react";
 import "./Navbar.css";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
+        
         <img src="/Shashan_Logo.png" alt="logo" />
         <ul className="navbar-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/events">Events</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/achievements">Achievements</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/events">Events</Link></li>
+        <li><Link to="/about">About Us</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/achievements">Achievements</Link></li>
         <li className="dropdown">
-          <a href="/membership">Membership ▾</a>
+          <Link to="/membership">Membership ▾</Link>
           <ul className="dropdown-menu">
-            <li><a href="#">Option 1</a></li>
-            <li><a href="#">Option 2</a></li>
+            <li><Link to="#">Option 1</Link></li>
+            <li><Link to="#">Option 2</Link></li>
           </ul>
         </li>
       </ul>
