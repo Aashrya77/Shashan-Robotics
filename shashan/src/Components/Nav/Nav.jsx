@@ -1,7 +1,9 @@
-import React from "react";
+import React, { use } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -25,8 +27,8 @@ const Navbar = () => {
       
 
       <div className="navbar-right">
-        <button className="btn join">Join</button>
-        <button className="btn explore">Explore</button>
+        <button className="btn explore" onClick={() => navigate('/contact')}>Join</button>
+        <button className="btn  join">Explore</button>
       </div>
     </nav>
   );

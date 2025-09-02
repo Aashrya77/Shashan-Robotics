@@ -8,6 +8,7 @@ import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
 import Membership from "./Components/Membership/Membership";
 import Achievements from "./Components/Achievements/Achievements";
+import Contact from "./Components/Contact/Contact";
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
         <Route path="/services" element={<Services/>}/>
         <Route path="/membership" element={<Membership/>}/>
         <Route path="/achievements" element={<Achievements/>}/>
+        <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<h1>404 Not Found</h1>}/>
       </Routes>
       <Footer/>

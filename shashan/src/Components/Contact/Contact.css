@@ -1,0 +1,282 @@
+/* contact.css */
+
+.ctc-main-section {
+  padding: 80px 0;
+  min-height: 100vh;
+}
+
+.ctc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ctc-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Left Side - Contact Info */
+.ctc-info-panel {
+  padding: 40px 0;
+}
+
+.ctc-tagline {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ctc-main-title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.ctc-description {
+  font-size: 16px;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ctc-details-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ctc-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ctc-detail-icon {
+  font-size: 16px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ctc-detail-text {
+  font-size: 16px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Right Side - Contact Form */
+.ctc-form-wrapper {
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.ctc-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ctc-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ctc-form-group {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ctc-form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.ctc-form-input,
+.ctc-form-select,
+.ctc-form-textarea {
+  padding: 12px 16px;
+  border: none;
+  font-size: 16px;
+  background-color: #F2F2F2;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  
+}
+
+
+
+.ctc-form-input:focus,
+.ctc-form-select:focus,
+.ctc-form-textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.ctc-form-select {
+  cursor: pointer;
+}
+
+.ctc-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.ctc-form-textarea::placeholder {
+  color: #6c757d;
+}
+
+/* Checkbox Grid */
+.ctc-checkbox-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.ctc-checkbox-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ctc-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.ctc-checkbox-label input[type="radio"],
+.ctc-checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.ctc-checkbox-text {
+  font-weight: 500;
+}
+
+/* Terms Label */
+.ctc-terms-label {
+  margin-top: 8px;
+}
+
+.ctc-terms-link {
+  color: #4a90e2;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.ctc-terms-link:hover {
+  color: #357abd;
+}
+
+/* Submit Button */
+.ctc-submit-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start;
+  margin-top: 16px;
+}
+
+.ctc-submit-btn:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+}
+
+.ctc-submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ctc-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .ctc-form-wrapper {
+    padding: 32px;
+  }
+  
+  .ctc-main-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctc-main-section {
+    padding: 60px 0;
+  }
+  
+  .ctc-form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .ctc-checkbox-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .ctc-form-wrapper {
+    padding: 24px;
+  }
+  
+  .ctc-main-title {
+    font-size: 32px;
+  }
+  
+  .ctc-info-panel {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ctc-container {
+    padding: 0 15px;
+  }
+  
+  .ctc-form-wrapper {
+    padding: 20px;
+  }
+  
+  .ctc-main-title {
+    font-size: 28px;
+  }
+  
+  .ctc-form-input,
+  .ctc-form-select,
+  .ctc-form-textarea {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .ctc-submit-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
