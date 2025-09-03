@@ -1,0 +1,425 @@
+.hero {
+  text-align: center;
+  padding: 50px 50px;
+  background: #f8f9fa;
+}
+
+/* Text Section */
+.hero-content h1 {
+  font-size: 68px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn.join {
+  background: #e63946;
+  color: white;
+}
+
+.btn.explore {
+  background: #333;
+  color: white;
+}
+
+.btn.learn {
+  background: #000;
+  color: #fff;
+}
+
+/* Placeholder box */
+.hero-placeholder {
+  height: 528px;
+  margin: 0 auto 40px auto;
+  background: #ddd;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #444;
+  font-weight: bold;
+  max-width: 100%;
+}
+
+.about {
+  padding: 60px 40px;
+  background: #8b1c1c; /* Dark red background */
+  color: #fff;
+}
+
+.about-top {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.about-left {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 30px;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Right Section (Cards) */
+.about-right {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #5e1010; /* Slightly darker red */
+  border-radius: 8px;
+  padding: 25px 10px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.community {
+  gap: 40px;
+  padding: 60px 40px;
+  background: #fff;
+}
+
+/* Left Text Section */
+.community-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.community-titles {
+  flex: 1;
+  min-width: 300px;
+}
+
+.community-description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 25px;
+  max-width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.stat h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #555;
+  max-width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Partnerships Section Styles */
+.partnerships-wrapper {
+  background: #f1f5f9;
+  padding: 80px 0;
+}
+
+.partnerships-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.partnerships-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.partnerships-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.partnerships-heading {
+  font-size: 42px;
+  font-weight: 500;
+  color: #1f2937;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.partnerships-description {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.partnerships-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.partnership-logo {
+  aspect-ratio: 5/1;
+  background: #374151;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.partnership-logo:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-placeholder {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-right {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .community {
+    padding: 40px 20px;
+  }
+
+  .community-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .partnerships-wrapper {
+    padding: 60px 0;
+  }
+
+  .partnerships-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .partnerships-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .partnerships-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 200px;
+    text-align: center;
+  }
+
+  .about-right {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .partnerships-container {
+    padding: 0 16px;
+  }
+
+  .partnerships-heading {
+    font-size: 24px;
+  }
+
+  .partnerships-logos {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero {
+    padding: 40px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 56px;
+  }
+
+  .about {
+    padding: 50px 30px;
+  }
+
+  .community {
+    padding: 50px 30px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .partnerships-wrapper {
+    padding: 70px 0;
+  }
+
+  .partnerships-content {
+    gap: 60px;
+  }
+
+  .partnerships-logos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .partnerships-heading {
+    font-size: 32px;
+  }
+}

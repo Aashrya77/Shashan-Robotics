@@ -11,14 +11,11 @@
   font-weight: 400;
 }
 
-
-
 .hero-content p {
   font-size: 16px;
   color: #555;
   margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Buttons */
@@ -27,6 +24,7 @@
   justify-content: center;
   gap: 15px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -51,7 +49,6 @@
 /* Placeholder box */
 .hero-placeholder {
   height: 528px;
- 
   margin: 0 auto 40px auto;
   background: #ddd;
   border-radius: 20px;
@@ -61,6 +58,7 @@
   font-size: 18px;
   color: #444;
   font-weight: bold;
+  max-width: 100%;
 }
 
 /* Trusted Section */
@@ -93,6 +91,8 @@
 
 .about-top {
   display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 /* Left Section */
@@ -127,7 +127,7 @@
   flex: 1;
   min-width: 300px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -135,7 +135,7 @@
 .card {
   background: #5e1010; /* Slightly darker red */
   border-radius: 8px;
-  padding: 25px 0px;
+  padding: 25px 10px;
   text-align: center;
   transition: transform 0.2s ease;
 }
@@ -153,6 +153,7 @@
   font-size: 14px;
   font-weight: 500;
 }
+
 .community {
   gap: 40px;
   padding: 60px 40px;
@@ -164,6 +165,18 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.community-titles {
+  flex: 1;
+  min-width: 300px;
+}
+
+.community-description {
+  flex: 1;
+  min-width: 300px;
 }
 
 .subtitle {
@@ -193,6 +206,7 @@
   display: flex;
   gap: 40px;
   margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 
 .stat h3 {
@@ -211,6 +225,7 @@
 .buttons {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -272,7 +287,7 @@
   flex-wrap: wrap;
 }
 
-.card {
+.comm-card {
   flex: 1;
   min-width: 300px;
   max-width: 350px;
@@ -290,6 +305,7 @@
   justify-content: center;
   font-size: 14px;
   color: #333;
+  max-width: 100%;
 }
 
 .card-title {
@@ -327,7 +343,6 @@
 .events-container { 
   background-color: #f7f8fa;
   padding: 80px 20px;
-
 }
 
 .filter-tabs {
@@ -341,6 +356,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .filter-tab {
@@ -379,6 +395,7 @@
   align-items: center;
   gap: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-wrap: wrap;
 }
 
 .event-card:hover {
@@ -403,6 +420,7 @@
 .event-content {
   flex: 1;
   text-align: left;
+  min-width: 250px;
 }
 
 .event-header {
@@ -410,6 +428,7 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 8px;
+  flex-wrap: wrap;
 }
 
 .event-title {
@@ -426,8 +445,7 @@
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .event-meta {
@@ -436,8 +454,8 @@
   margin-bottom: 10px;
   font-size: 0.9rem;
   color: #64748b;
-    font-family: Arial, Helvetica, sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
 }
 
 .event-description {
@@ -445,8 +463,7 @@
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .event-actions {
@@ -468,4 +485,198 @@
 
 .register-button:hover {
   background-color: #2c5aa0;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-placeholder {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-right {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .community {
+    padding: 40px 20px;
+  }
+
+  .community-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .techspire-section {
+    padding: 40px 15px;
+  }
+
+  .techspire-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .cards-container {
+    gap: 30px;
+  }
+
+  .comm-card {
+    min-width: 280px;
+  }
+
+  .card-image {
+    width: 200px;
+    height: 150px;
+  }
+
+  .events-container {
+    padding: 40px 15px;
+  }
+
+  .filter-tabs {
+    max-width: 100%;
+    gap: 5px;
+  }
+
+  .filter-tab {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .event-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .event-image {
+    width: 100%;
+    max-width: 200px;
+    height: 120px;
+  }
+
+  .event-content {
+    text-align: center;
+  }
+
+  .event-header {
+    justify-content: center;
+  }
+
+  .event-meta {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 200px;
+    text-align: center;
+  }
+
+  .about-right {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .techspire-title {
+    font-size: 1.8rem;
+  }
+
+  .comm-card {
+    min-width: 250px;
+  }
+
+  .card-image {
+    width: 180px;
+    height: 130px;
+  }
+
+  .filter-tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-tab {
+    width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero {
+    padding: 40px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 56px;
+  }
+
+  .about {
+    padding: 50px 30px;
+  }
+
+  .community {
+    padding: 50px 30px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .techspire-section {
+    padding: 50px 25px;
+  }
+
+  .events-container {
+    padding: 60px 25px;
+  }
 }
